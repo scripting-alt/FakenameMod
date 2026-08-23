@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.felp.fakenamemod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "fakenamemod.refmap.json",
+  "mixins": [
+    "PlayerListMixin",
+    "CommandSourceStackMixin",
+    "ServerPlayerMixin",
+    "PlayerMixin",
+    "ServerPlayerGameProfileMixin"
+  ],
+  "client": [
+    "client.ClientSuggestionProviderMixin",
+    "client.PlayerTabOverlayMixin",
+    "client.PlayerInfoMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
